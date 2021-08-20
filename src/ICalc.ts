@@ -1,4 +1,4 @@
-interface ICalc<Type> {
+interface ICalc<Type extends Number> {
 
     add(x: Type, y: Type): Type;
     sub(x: Type, y: Type): Type;

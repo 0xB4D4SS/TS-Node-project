@@ -1,14 +1,15 @@
-class Complex {
+class Complex extends Number{
     private _re: number;
     private _im: number;
     constructor(re: number, im: number) {
+        super();
         this._re = re;
         this._im = im;
     }
-    get re() {
+    get re(): number {
         return this._re;
     }
-    get im() {
+    get im(): number {
         return this._im;
     }
     set re(val: number) {

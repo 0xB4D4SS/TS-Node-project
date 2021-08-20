@@ -1,13 +1,10 @@
-import Calculator from "./Calculator";
-import ICalc from "./ICalc";
 import Complex from "./Complex";
-import ComplexCalculator from "./ComplexCalculator";
+import Calculator from "./Calculator";
 
-const calc: ICalc<number> = new Calculator();
-const compcalc: ICalc<Complex> = new ComplexCalculator();
+const calc = new Calculator();
 
-console.log(calc.add(2,45));
-console.log(compcalc.add(new Complex(1,0), new Complex(2, 1)));
+console.log(calc.add(44,2));
+console.log(calc.sub(new Complex(2,4), new Complex(3, 2)).toString());
 
 let s = 1;
 
